@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>TEMPO.CO</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="Drag And Move sections and slides with fullpage.js" />
+	<meta name="keywords"  content="fullpage,extension,addon,dragAndMove,drag,drag and drop,grab,dragging,grabbing,swipe,finger,touch,snapping,snap,sections,panels,slides,onepage,scroll" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<!--[if IE]>
+		<script >
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+</head>
+<body>
+	<!--
+	<div class="header">
+    	<div class="logo-left"><img src="images/logo-tempo-co.png"></div>
+        <div class="logo-right"><img src="images/ag2018.png"></div>
+    </div>
+	-->
+<main class="cd-main-content">
+	<div style="height:40px; display:flex; align-items:center; justify-content: center; font-size:12px; background:#f9f9f9; font-weight:600;">
+		<a href="index.html" style="color:#CB070A; margin-right:5px;" id="id-button">ID</a> | <a href="index_en.html" style="color:#1929D5;margin-left:5px;" id="en-button">EN</a>
+	</div>
+	<div class="headerbox">
+	<div class="container">
+		<div class="container-col">
+			<div class="main-fotos"><img src="images/EJC.png"></div>
+			<h1 class="title t-center margin-left-xs margin-right-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+			<p class="t-center">The datepicker is contained in an absolutely positioned div that is a direct child of the body element. It does not affect the layout of the associated input eor</p>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<div class="container-col">
+			<ul class="list-tokoh">
+				<li>
+					<div class="cover-tokoh"><a href="tokoh_01_en.html"><img src="tokoh1/foto-profil1.jpg"></a></div>
+					<div class="box-tokoh">
+						<h2 class="title"><a href="tokoh_01_en.html">Nani Zulminarni</a></h2>
+						<p>Empowering 32,000 matriarchs in 34 provinces.</p>
+					</div>
+				</li>
+				<li>
+					<div class="cover-tokoh"><a href="tokoh_02.html"><img src="tokoh2/foto-profil1.png"></a></div>
+					<div class="box-tokoh">
+						<h2 class="title"><a href="tokoh_02_en.html">Wilhelmina Mali Dappa</a></h2>
+						<p>Pemberdaya Perempuan di Sumba Barat Daya.</p>
+					</div>
+				</li>
+				<li>
+					<div class="cover-tokoh"><a href="tokoh_03_en.html"><img src="tokoh3/foto-profil1.png"></a></div>
+					<div class="box-tokoh">
+						<h2 class="title"><a href="tokoh_03_en.html">Judhi Kristantini</a></h2>
+						<p>Initiator of the 'I am a Woman Against Corruption' (SPAK) movement.</p>
+					</div>
+				</li>
+				<li>
+					<div class="cover-tokoh"><a href="tokoh_03.html"><img src="tokoh4/foto-profil1.png"></a></div>
+					<div class="box-tokoh">
+						<h2 class="title"><a href="tokoh_04_en.html">Wendelina Olin</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</div>
+				</li>
+				<li>
+					<div class="cover-tokoh"><a href="tokoh_01.html"><img src="tokoh5/foto-profil1.png"></a></div>
+					<div class="box-tokoh">
+						<h2 class="title"><a href="tokoh_05_en.html">Rubiah</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</div>
+				</li>
+				<li>
+					<div class="cover-tokoh"><a href="tokoh_01.html"><img src="tokoh6/foto-profil1.png"></a></div>
+					<div class="box-tokoh">
+						<h2 class="title"><a href="tokoh_06_en.html">Lita Anggraeni</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					</div>
+				</li>
+				<li>
+					<div class="cover-tokoh"><a href="tokoh_01.html"><img src="tokoh7/foto-profil1.png"></a></div>
+					<div class="box-tokoh">
+						<h2 class="title"><a href="tokoh_07_en.html">Lian Gogali</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</main>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.easings.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script src="js/scrolloverflow.js"></script>
+<script src="js/jquery.flip.js"></script>
+<script >
+$(document).ready(function() {
+	initNormal();
+	function initNormal(){
+		$('#myContainer').fullpage({
+			dragAndMove: true,
+			dragAndMoveKey: 'YWx2YXJvdHJpZ28uY29tX0EyMlpISmhaMEZ1WkUxdmRtVT0wWUc=',
+			offsetSections: false,
+			slidesNavigation:true,
+			scrollOverflow: true,
+			resetSliders:true,
+			scrollHorizontally: true,
+		});
+	}
+});
+</script>
+<script>
+$(document).ready(function() {
+	$("#card").flip({
+		axis: "x",
+		reverse: true,
+		trigger: "click"
+	});
+});
+</script>
+</body>
+</html>
