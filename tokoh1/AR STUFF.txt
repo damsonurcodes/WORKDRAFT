@@ -1,0 +1,5 @@
+https://medium.com/arjs/ar-code-a-fast-path-to-augmented-reality-60e51be3cbdf
+https://github.com/jeromeetienne/ar.js
+https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf
+https://medium.com/@akashkuttappa/using-3d-models-with-ar-js-and-a-frame-84d462efe498
+https://aframe.io/docs/0.6.0/introduction/models.html#sidebar
